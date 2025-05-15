@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "472962939084",
+    "project_id": "appdeliverypetz",
+    "storage_bucket": "appdeliverypetz.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472962939084:android:0863555414458e9646ea69",
+        "android_client_info": {
+          "package_name": "com.appdeliverypetz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7JelM6shiq7q9wvi3mW1--wgvSVyFbas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
