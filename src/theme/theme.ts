@@ -39,11 +39,18 @@ const borderRadius = {
   pill: 999,
 };
 
+const fonts = {
+  light: "Font-Light",
+  regular: "Font-Regular",
+  bold: "Font-Bold",
+};
+
 const theme = {
   colors,
   fontSizes,
   spacing,
   borderRadius,
+  fonts,
 };
 
 export default theme;
