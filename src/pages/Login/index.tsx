@@ -1,4 +1,5 @@
-import { StyleSheet, SafeAreaView, Image } from "react-native";
+import theme from "@/theme";
+import { StyleSheet, SafeAreaView, Image, Text } from "react-native";
 
 export default function Login() {
   return (
@@ -12,6 +13,14 @@ export default function Login() {
           alignSelf: "center",
         }}
       />
+      <Text
+        style={{
+          textAlign: "center",
+          fontFamily: theme.fonts.regular,
+        }}
+      >
+        Olá!!
+      </Text>
     </SafeAreaView>
   );
 }
