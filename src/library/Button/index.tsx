@@ -43,7 +43,7 @@ const Button = ({
     if (isSecondary || isTertiary) {
       return "transparent";
     }
-    return theme.colors.black;
+    return theme.colors.primary;
   }, [isPrimary, isSecondary, isTertiary, isLoading, bgColor]);
 
   const textColor = useMemo(() => {

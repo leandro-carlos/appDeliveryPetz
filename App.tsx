@@ -1,8 +1,8 @@
-import { NavigationContainer } from "@react-navigation/native";
-import { AuthStack } from "@/routes/auth.navigation";
 import { useFonts } from "expo-font";
 import { PaperProvider } from "react-native-paper";
 import theme from "@/theme";
+import { AuthProvider } from "@/context/AuthContext";
+import RootNavigation from "@/routes/root.navigation";
 
 export default function App() {
   const [loaded, error] = useFonts({
@@ -17,10 +17,10 @@ export default function App() {
   }
 
   return (
-    <PaperProvider theme={theme.paper}>
-      <NavigationContainer>
-        <AuthStack />
-      </NavigationContainer>
-    </PaperProvider>
+    <AuthProvider>
+      <PaperProvider theme={theme.paper}>
+        <RootNavigation />
+      </PaperProvider>
+    </AuthProvider>
   );
 }

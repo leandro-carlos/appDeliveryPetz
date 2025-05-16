@@ -18,31 +18,39 @@ export default function Header({ hasBack = true, textPage }: Props) {
   }
 
   return (
-    <>
-      <View
-        style={{
-          flexDirection: "row",
-          alignItems: "center",
-        }}
-      >
-        {hasBack && (
-          <TouchableOpacity onPress={goBack}>
-            <ArrowLeft style={{ flex: 1 }} />
-          </TouchableOpacity>
-        )}
-      </View>
+    <View
+      style={{
+        height: 56, // altura padrão de header
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center",
+        position: "relative", // permite o botão de voltar ficar absoluto se necessário
+      }}
+    >
+      {hasBack && (
+        <TouchableOpacity
+          onPress={goBack}
+          style={{
+            position: "absolute",
+            left: 0,
+            paddingHorizontal: 16,
+          }}
+        >
+          <ArrowLeft color={theme.colors.black} size={24} />
+        </TouchableOpacity>
+      )}
+
       {textPage && (
         <Text
           style={{
-            textAlign: "center",
-            alignSelf: "center",
-            position: "absolute",
+            fontSize: 16,
+            fontFamily: theme.fonts.bold,
             color: theme.colors.black,
           }}
         >
           {textPage}
         </Text>
       )}
-    </>
+    </View>
   );
 }

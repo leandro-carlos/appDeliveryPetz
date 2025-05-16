@@ -26,11 +26,11 @@ export default function Input({
 
   return (
     <View style={{ gap: 6 }}>
-      <Text colorText={isFocused ? "black" : "mediumGrey"}>{label}</Text>
+      <Text colorText={isFocused ? "black" : "grayMedium"}>{label}</Text>
       <View
         style={[
           styles.inputContainer,
-          isFocused && { borderColor: theme.colors.black },
+          isFocused && { borderColor: theme.colors.primary },
         ]}
       >
         <TextInput
